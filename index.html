@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Isaiah Clarke — Portfolio 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Inter', sans-serif; background: #f9f9f9; color: #111; }
+
+  header {
+    padding: 3rem 2rem 2rem;
+    max-width: 760px;
+    margin: 0 auto;
+  }
+  header h1 { font-size: 1.6rem; font-weight: 600; }
+  header p { margin-top: 0.4rem; color: #666; font-size: 0.95rem; }
+
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 2rem 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .card {
+    background: white;
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+    padding: 1.75rem;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: box-shadow 0.2s;
+  }
+  .card:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+
+  .card-left h2 { font-size: 1.1rem; font-weight: 600; margin-bottom: 0.35rem; }
+  .card-left p { font-size: 0.875rem; color: #555; line-height: 1.5; max-width: 480px; }
+
+  .tags { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.85rem; }
+  .tag {
+    font-size: 0.75rem;
+    padding: 0.2rem 0.65rem;
+    border-radius: 999px;
+    background: #f0f0f0;
+    color: #444;
+  }
+
+  .arrow { font-size: 1.2rem; color: #bbb; flex-shrink: 0; margin-left: 1rem; }
+
+  footer {
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.8rem;
+    color: #aaa;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Isaiah Clarke</h1>
+  <p>Design & Development Portfolio — 2026</p>
+</header>
+
+<main>
+  <a class="card" href="burview.html">
+    <div class="card-left">
+      <h2>🌿 Bur-View</h2>
+      <p>A gamified mobile app connecting Burlington residents with local eco-activities. Earn points for tree planting and cleanups, redeem rewards at local businesses.</p>
+      <div class="tags">
+        <span class="tag">Mobile UX/UI</span>
+        <span class="tag">Gamification</span>
+        <span class="tag">Community</span>
+      </div>
+    </div>
+    <span class="arrow">→</span>
+  </a>
+
+  <a class="card" href="fanz.html">
+    <div class="card-left">
+      <h2>🏟️ FANZ</h2>
+      <p>A multi-sport community platform with live scores, detailed game stats, and event schedules across NFL, NBA, MLB, NHL, and Soccer.</p>
+      <div class="tags">
+        <span class="tag">Web App</span>
+        <span class="tag">Real-Time Data</span>
+        <span class="tag">Sports</span>
+      </div>
+    </div>
+    <span class="arrow">→</span>
+  </a>
+
+  <a class="card" href="laundry.html">
+    <div class="card-left">
+      <h2>🧺 Smart Laundry Room</h2>
+      <p>An IoT monitoring and reservation system for shared laundry facilities, using Raspberry Pi and non-invasive sensors to show real-time machine availability.</p>
+      <div class="tags">
+        <span class="tag">IoT</span>
+        <span class="tag">Raspberry Pi</span>
+        <span class="tag">Flask</span>
+        <span class="tag">Capstone</span>
+      </div>
+    </div>
+    <span class="arrow">→</span>
+  </a>
+</main>
+
+<footer>Isaiah Clarke · 2026</footer>
+
+</body>
+</html>

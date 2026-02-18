@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Laundry Room — Isaiah Clarke</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Inter', sans-serif; background: #f9f9f9; color: #111; }
+
+  .page { max-width: 760px; margin: 0 auto; padding: 2rem; }
+
+  .back { display: inline-block; font-size: 0.85rem; color: #666; text-decoration: none; margin-bottom: 2rem; }
+  .back:hover { color: #111; }
+
+  .project-header { margin-bottom: 2.5rem; }
+  .project-header h1 { font-size: 2rem; font-weight: 600; margin-bottom: 0.5rem; }
+  .project-header p { color: #555; font-size: 1rem; line-height: 1.6; max-width: 580px; }
+
+  .tags { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 1rem; }
+  .tag { font-size: 0.75rem; padding: 0.2rem 0.65rem; border-radius: 999px; background: #ebebeb; color: #444; }
+
+  .divider { border: none; border-top: 1px solid #e5e5e5; margin: 2rem 0; }
+
+  h2 { font-size: 1rem; font-weight: 600; margin-bottom: 1rem; }
+
+  .features { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+  .feature {
+    background: white;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    padding: 1.25rem;
+  }
+  .feature h3 { font-size: 0.9rem; font-weight: 600; margin-bottom: 0.3rem; }
+  .feature p { font-size: 0.82rem; color: #666; line-height: 1.5; }
+
+  .overview-block {
+    background: white;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .overview-block p { font-size: 0.9rem; color: #444; line-height: 1.7; }
+
+  .list { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; }
+  .list li {
+    font-size: 0.875rem;
+    color: #444;
+    padding: 0.6rem 1rem;
+    background: white;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+  }
+  .list li::before { content: '→ '; color: #aaa; }
+
+  .note {
+    font-size: 0.8rem;
+    color: #888;
+    margin-top: 2rem;
+    padding: 0.75rem 1rem;
+    border-left: 3px solid #ddd;
+  }
+
+  footer { text-align: center; padding: 3rem 2rem 2rem; font-size: 0.8rem; color: #aaa; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <a class="back" href="index.html">← Back to Portfolio</a>
+
+  <div class="project-header">
+    <h1>🧺 Smart Laundry Room</h1>
+    <p>An IoT-based monitoring and reservation system for shared laundry facilities. Using non-invasive sensors and a Raspberry Pi, it transforms standard machines into smart appliances with real-time availability and queue management.</p>
+    <div class="tags">
+      <span class="tag">IoT</span>
+      <span class="tag">Raspberry Pi</span>
+      <span class="tag">Flask</span>
+      <span class="tag">Sensors</span>
+      <span class="tag">Senior Capstone</span>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <h2>Problem</h2>
+  <div class="overview-block">
+    <p>Shared laundry facilities in dorms and apartments operate as unobservable resource networks — users have to physically walk down to check if machines are free. This system transforms that chaotic environment into a visible, managed network with real-time status and fair queue-based scheduling.</p>
+  </div>
+
+  <hr class="divider">
+
+  <h2>Key Features</h2>
+  <div class="features">
+    <div class="feature">
+      <h3>Real-Time Monitoring</h3>
+      <p>Non-invasive current sensors detect machine states (idle, running, complete) without any modifications to the appliances.</p>
+    </div>
+    <div class="feature">
+      <h3>Smart Reservations</h3>
+      <p>Queue-based scheduling with auto-cancellation for no-shows and notifications when your turn arrives.</p>
+    </div>
+    <div class="feature">
+      <h3>Multi-Sensor Data</h3>
+      <p>Temperature, humidity, vibration, and airflow sensors provide cycle details and early maintenance alerts.</p>
+    </div>
+    <div class="feature">
+      <h3>Web Dashboard</h3>
+      <p>Color-coded machine availability (green/orange/red) with countdown timers, accessible from any device.</p>
+    </div>
+    <div class="feature">
+      <h3>Smart Notifications</h3>
+      <p>Customizable alerts via ping, SMS, or email for cycle completion and reservation updates.</p>
+    </div>
+    <div class="feature">
+      <h3>Admin Portal</h3>
+      <p>Facility management interface with usage analytics, maintenance controls, and cycle time customization.</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <h2>Hardware & Tech Stack</h2>
+  <ul class="list">
+    <li>Raspberry Pi Zero 2 W — central processing unit</li>
+    <li>SCT-013-000 non-invasive clamp-on current sensors</li>
+    <li>ADS1115 16-bit ADC for precise analog-to-digital conversion</li>
+    <li>DS18B20 temperature probes + SHT31-D humidity sensors</li>
+    <li>ADXL345 accelerometer for spin cycle vibration detection</li>
+    <li>Flask web app with responsive mobile-first design</li>
+    <li>RESTful API for real-time sensor data and user interactions</li>
+    <li>Local storage with 7-day retention — works fully offline</li>
+  </ul>
+
+  <hr class="divider">
+
+  <h2>Key Innovations</h2>
+  <ul class="list">
+    <li>Zero machine modifications — fully non-invasive installation</li>
+    <li>Multi-sensor fusion for accurate cycle state detection</li>
+    <li>Intelligent queue management with auto-cancellation for no-shows</li>
+    <li>Predictive maintenance alerts based on usage patterns</li>
+    <li>Peak usage analysis and optimal laundry time recommendations</li>
+    <li>Local-first architecture — no cloud dependency, privacy protected</li>
+  </ul>
+
+  <div class="note">Senior Design Capstone Project — CSE 471W · Estimated install cost: $650 per facility</div>
+
+</div>
+<footer>Isaiah Clarke · 2026</footer>
+</body>
+</html>

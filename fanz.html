@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FANZ — Isaiah Clarke</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Inter', sans-serif; background: #f9f9f9; color: #111; }
+
+  .page { max-width: 760px; margin: 0 auto; padding: 2rem; }
+
+  .back { display: inline-block; font-size: 0.85rem; color: #666; text-decoration: none; margin-bottom: 2rem; }
+  .back:hover { color: #111; }
+
+  .project-header { margin-bottom: 2.5rem; }
+  .project-header h1 { font-size: 2rem; font-weight: 600; margin-bottom: 0.5rem; }
+  .project-header p { color: #555; font-size: 1rem; line-height: 1.6; max-width: 580px; }
+
+  .tags { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 1rem; }
+  .tag { font-size: 0.75rem; padding: 0.2rem 0.65rem; border-radius: 999px; background: #ebebeb; color: #444; }
+
+  .divider { border: none; border-top: 1px solid #e5e5e5; margin: 2rem 0; }
+
+  h2 { font-size: 1rem; font-weight: 600; margin-bottom: 1rem; }
+
+  .features { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+  .feature {
+    background: white;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    padding: 1.25rem;
+  }
+  .feature h3 { font-size: 0.9rem; font-weight: 600; margin-bottom: 0.3rem; }
+  .feature p { font-size: 0.82rem; color: #666; line-height: 1.5; }
+
+  .overview-block {
+    background: white;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .overview-block p { font-size: 0.9rem; color: #444; line-height: 1.7; }
+
+  .list { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; }
+  .list li {
+    font-size: 0.875rem;
+    color: #444;
+    padding: 0.6rem 1rem;
+    background: white;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+  }
+  .list li::before { content: '→ '; color: #aaa; }
+
+  footer { text-align: center; padding: 3rem 2rem 2rem; font-size: 0.8rem; color: #aaa; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <a class="back" href="index.html">← Back to Portfolio</a>
+
+  <div class="project-header">
+    <h1>🏟️ FANZ</h1>
+    <p>A comprehensive multi-sport community platform delivering live scores, detailed game statistics, and upcoming event schedules across NFL, NBA, MLB, NHL, and Soccer leagues.</p>
+    <div class="tags">
+      <span class="tag">Web App</span>
+      <span class="tag">Real-Time Data</span>
+      <span class="tag">Sports</span>
+      <span class="tag">API Integration</span>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <h2>Overview</h2>
+  <div class="overview-block">
+    <p>FANZ is built for fans who follow multiple sports and want a single place for schedules, scores, and in-depth statistics. The dark-themed interface is designed for comfortable viewing during live games, with modal windows giving quick access to detailed stats without leaving the main feed.</p>
+  </div>
+
+  <hr class="divider">
+
+  <h2>Key Features</h2>
+  <div class="features">
+    <div class="feature">
+      <h3>Multi-Sport Coverage</h3>
+      <p>NFL, NBA, MLB, NHL, and Soccer — all in one place with consistent game tracking.</p>
+    </div>
+    <div class="feature">
+      <h3>Real-Time Game Details</h3>
+      <p>Live scores, play-by-play updates, and inning/quarter breakdowns.</p>
+    </div>
+    <div class="feature">
+      <h3>User Profiles</h3>
+      <p>Personalized profiles with favorite team preferences and membership tiers.</p>
+    </div>
+    <div class="feature">
+      <h3>Upcoming Events</h3>
+      <p>Full schedule view across all leagues so fans never miss a game.</p>
+    </div>
+    <div class="feature">
+      <h3>Statistics Dashboard</h3>
+      <p>Detailed analytics with scoring summaries and play-by-play descriptions.</p>
+    </div>
+    <div class="feature">
+      <h3>Social Features</h3>
+      <p>Community feed, explore tab, and direct messaging for sports fans.</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <h2>Technical Highlights</h2>
+  <ul class="list">
+    <li>RESTful API integration with multiple sports data providers</li>
+    <li>Real-time data synchronization for live game updates</li>
+    <li>Responsive interface optimized for desktop and mobile</li>
+    <li>Dark theme UI designed for extended, comfortable viewing</li>
+    <li>Scalable backend architecture supporting concurrent users</li>
+    <li>Comprehensive league coverage: NFL, NBA, MLB, NHL, MLS</li>
+  </ul>
+
+  <hr class="divider">
+
+  <h2>Design Philosophy</h2>
+  <div class="overview-block">
+    <p>FANZ uses a dark, modern interface to reduce eye strain during live game viewing. Navigation is organized by sport type, and modals give rapid access to detailed stats without breaking the browsing flow. The design prioritizes information density while keeping everything readable.</p>
+  </div>
+
+</div>
+<footer>Isaiah Clarke · 2026</footer>
+</body>
+</html>
